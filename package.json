@@ -1,0 +1,19 @@
+{
+  "name": "simon-creates",
+  "version": "0.0.1",
+  "description": "Simon Cohen portfolio/CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/BenC0/Simon-Creates.git"
+  },
+  "author": "Ben Cohen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BenC0/Simon-Creates/issues"
+  },
+  "homepage": "https://github.com/BenC0/Simon-Creates#readme"
+}

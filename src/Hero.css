@@ -1,0 +1,15 @@
+#hero {
+	height: 100vh;
+	display: block;
+	position: relative;
+	background: var(--body-gradient);
+	margin-top: var(--negative-header-height);
+	padding-top: var(--header-height);
+}
+
+#hero #clientBanner {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

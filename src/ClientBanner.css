@@ -1,0 +1,11 @@
+#clientBanner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	justify-content: space-around;
+	background: var(--dark-blue);
+}
+
+#clientBanner > * {
+	margin: 1em;
+}

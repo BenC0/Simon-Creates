@@ -8,16 +8,25 @@
 	--disruptor-color: var(--white);
 
 
-	--disrupter-angle: 45deg;
+	--disrupter-angle: 80deg;
 	--body-gradient: linear-gradient(
 		var(--disrupter-angle),
 		var(--highlight-1) 0%,
-		var(--highlight-2) 35%,
+		var(--highlight-2) 45%,
 		var(--dark-blue) 85%,
 		var(--darker-blue) 100%
 	);
 
 	--body-font-family: 'pnova-reg', 'Helvetica Neue', sans-serif;
+
+	--header-padding: 0.8rem;
+	--logo-font-size: 2.18rem;
+	--header-height: calc(
+			var(--header-padding) +
+			(var(--logo-font-size) * 3) -
+			(var(--logo-font-size) * .1) 
+		);
+	--negative-header-height: calc(0 - var(--header-height));
 }
 
 body {
@@ -29,20 +38,19 @@ body {
 	min-width: 100vw;
 	min-height: 100vh;
 	color: var(--white);
-	background: var(--body-gradient);
-}
-
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-	monospace;
+	background: var(--white);
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'pnova-semibold';
+	font-family: 'pnova-semibold', 'Helvetica Neue', sans-serif;
 }
 
 small, .small {
 	font-size: 0.9em;
+}
+
+img {
+	max-width: 100%;
 }
 
 @font-face {

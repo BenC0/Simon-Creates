@@ -1,6 +1,7 @@
 #clientBanner {
 	display: flex;
 	flex-wrap: wrap;
+	color: var(--white);
 	align-items: flex-start;
 	justify-content: space-around;
 	background: var(--dark-blue);

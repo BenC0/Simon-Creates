@@ -1,11 +1,14 @@
 import React from 'react';
 import './Hero.css';
-import ClientBanner from './ClientBanner';
 
 function Hero() {
 	return [
 		<section id="hero">
-			<ClientBanner />
+			<div className="content">
+				<h1>Simon Cohen</h1>
+				<p>Highly creative, passionate and empathetic, who aims to always take a human centric approach to his work.</p>
+				<p>With continually growing interests in: advertising, psychology, health, fitness, human behaviour and new technology.</p>
+			</div>
 		</section>
 	];
 }

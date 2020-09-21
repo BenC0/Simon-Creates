@@ -9,18 +9,18 @@ function ImageWithText(props) {
 	})
 
 	return [
-		<div className="imageWithText">
+		<section className="imageWithText" highlight={props.content.highlight}>
 			<div class="image-container">
 				<img className="imageHolder"
 					src={props.content.imageSrc}
 					alt={props.content.title}
 				/>
 			</div>
-			<div class="copy">
+			<div class="content">
 				<h2>{props.content.title}</h2>
 				<p>{copy}</p>
 			</div>
-		</div>
+		</section>
 	]
 }
 

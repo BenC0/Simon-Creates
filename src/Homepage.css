@@ -1,8 +1,0 @@
-.introContent {
-	padding: 1em;
-	color: var(--dark-blue);
-}
-
-.introContent > .imageWithText .copy {
-	padding-right: 30vw;
-}

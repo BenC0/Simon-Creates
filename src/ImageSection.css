@@ -1,0 +1,7 @@
+#root > section.full-width-image {
+	padding: 0;
+	
+	& > img { 
+		transform: skewY(var(--anti-disrupter-angle)) scale(1.2);
+	}
+}

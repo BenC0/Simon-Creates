@@ -1,14 +1,15 @@
 :root {
 	--highlight-1: #32a39e;
 	--highlight-2: #2e9597;
+	--highlight-3: #DEEBD0;
 	--dark-blue: #1a5479;
 	--darker-blue: #14425E;
 	--white: #fff;
 
 	--disruptor-color: var(--white);
 
-
-	--disrupter-angle: 80deg;
+	--disrupter-angle: -10deg;
+	--anti-disrupter-angle: 10deg;
 	--body-gradient: linear-gradient(
 		var(--disrupter-angle),
 		var(--highlight-1) 0%,
@@ -17,28 +18,74 @@
 		var(--darker-blue) 100%
 	);
 
-	--body-font-family: 'pnova-reg', 'Helvetica Neue', sans-serif;
+	--top-level: 10;
 
-	--header-padding: 0.8rem;
-	--logo-font-size: 2.18rem;
-	--header-height: calc(
-			var(--header-padding) +
-			(var(--logo-font-size) * 3) -
-			(var(--logo-font-size) * .1) 
-		);
-	--negative-header-height: calc(0 - var(--header-height));
+	--header-menu-height: 7rem;
+
+	--body-font-family: 'pnova-reg', 'Helvetica Neue', sans-serif;
+	font-size: 22px;
 }
 
 body {
 	margin: 0;
-	font-size: 22px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	font-family: var(--body-font-family);
 	min-width: 100vw;
 	min-height: 100vh;
-	color: var(--white);
+	color: var(--darker-blue);
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: var(--body-font-family);
+	padding-bottom: var(--header-menu-height);
+	background: var(--dark-blue);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#root > section	{
+	display: flex;
+	text-align: left;
+	overflow: hidden;
+	padding: 5rem 0;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	transform: skewY(var(--disrupter-angle));
+
+	& > * {
+		transform: skewY(var(--anti-disrupter-angle));
+	}
+
+	& .content {
+		padding: 0 2rem;
+	}
+
+	& h1, & h2, & h3, & h4, & h5, & h6 {
+		margin: .5em -1rem;
+		text-align: center;
+		line-height: 0.9;
+		font-size: 2rem;
+	}
+}
+
+[highlight="gradient"] {
+	background: var(--body-gradient);
+}
+
+[highlight="white"] {
 	background: var(--white);
+}
+
+[highlight="highlight-1"] {
+	background: var(--highlight-1);
+}
+
+[highlight="highlight-2"] {
+	background: var(--highlight-2);
+}
+
+[highlight="highlight-3"] {
+	background: var(--highlight-3);
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -135,5 +135,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "postcss-nesting": "^7.0.1"
   }
 }

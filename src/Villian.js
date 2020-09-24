@@ -1,24 +1,25 @@
 import React from 'react';
-import './Hero.css';
+import './Villian.css';
 import ImageSection from './ImageSection';
 
-function Hero() {
+function Villian() {
 	const imgUrlBase = `${window.location.href}images/`
 	const simonProfileImg = `${imgUrlBase}Simon-Profile.jpeg`
 	let SimonProfile = {
 		"imageSrc": simonProfileImg,
-		"alt": "Simon Cohen"
+		"alt": "Simon Cohen",
+		"link": "#"
 	}
 
 	return [
-		<section id="hero">
+		<section id="villian" highlight="white">
 			<div className="content">
 				<div className="copy">
-					<h1>Simon Cohen</h1>
+					<h1>All about me</h1>
 					<p>Highly creative, passionate and empathetic, who aims to always take a human centric approach to his work.</p>
-					<p>With continually growing interests in: advertising, psychology, health, fitness, human behaviour and new technology.</p>
+					<a href={SimonProfile.link} className="cta">See More</a>
 				</div>
-				<div className="hidden-on-m hero-image-container">
+				<div className="hidden-on-m villian-image-container">
 					<img src={SimonProfile.imageSrc} alt={SimonProfile.alt} />
 				</div>
 			</div>
@@ -26,4 +27,4 @@ function Hero() {
 	];
 }
 
-export default Hero;
+export default Villian;

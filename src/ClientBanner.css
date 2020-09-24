@@ -1,12 +1,23 @@
 #clientBanner {
-	display: flex;
-	flex-wrap: wrap;
 	color: var(--white);
-	align-items: flex-start;
-	justify-content: space-around;
 	background: var(--dark-blue);
-}
 
-#clientBanner > * {
-	margin: 1em;
+	@media screen and (min-width: 650px) {
+		color: var(--dark-blue);
+		background: var(--white);
+	}
+
+	& .content {
+		display: grid;
+		text-align: center; 
+		grid-gap: 1rem;
+		grid-template-rows: repeat(3, 2rem);
+		grid-template-columns: repeat(2, 1fr);
+
+		@media screen and (min-width: 650px) {
+			grid-gap: 2rem;
+			grid-template-rows: repeat(2, 2rem);
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
 }

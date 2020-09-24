@@ -16,7 +16,7 @@
 		top: 0;
 		left: -100%;
 		right: -100%;
-		bottom: -100%;
+		bottom: -300%;
 		position: absolute;
 		background: var(--white);
 		transform: rotate(var(--disrupter-angle));
@@ -28,5 +28,14 @@
 		position: relative;
 		max-width: var(--menu-icon-size);
 		max-height: var(--menu-icon-size);
+	}
+
+	&.desktop {
+		position: static;
+		padding-bottom: 2rem;
+
+		&::before {
+			display: none;
+		}
 	}
 }

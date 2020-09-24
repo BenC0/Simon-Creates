@@ -7,8 +7,8 @@ import Menu from './Menu';
 function App() {
 	return [
 		<Header />,
+		<Menu.mobile />,
 		<Homepage />,
-		<Menu />
 	];
 }
 

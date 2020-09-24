@@ -1,11 +1,7 @@
-#root > section#hero {
-	z-index: 2;
+#root > section#villian {
 	display: flex;
-	overflow: visible;
-	padding-top: 6rem;
 	position: relative;
-	color: var(--white);
-	background: var(--body-gradient);
+	padding-top: 6rem;
 
 	& h1 {
 		font-size: 4rem;
@@ -15,7 +11,7 @@
 		display: grid;
 		align-items: center;
 		justify-items: center;
-		grid-column-gap: 1rem;
+		grid-column-gap: 1.5rem;
 		grid-template-rows: auto;
 		grid-template-columns: 1fr 1fr;
 
@@ -23,7 +19,7 @@
 			& h1 {
 				font-size: 3.5rem;
 			}
-			& .hero-image-container {
+			& .villian-image-container {
 				grid-column: 2;
 				margin-bottom: -2.5rem;
 				& img {

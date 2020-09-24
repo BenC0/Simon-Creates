@@ -3,8 +3,8 @@ import React from 'react';
 
 function ImageSection(props) {
 	return [
-		<section class="full-width-image">
-			<img src={props.imageSrc} />
+		<section className={props.image.extraClass.concat(" full-width-image")}>
+			<img src={props.image.imageSrc} alt={props.image.alt} />
 		</section>
 	];
 }

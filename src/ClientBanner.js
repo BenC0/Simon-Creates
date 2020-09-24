@@ -34,7 +34,11 @@ function ClientBanner() {
 		clientEls.push(<ClientEl client={client}/>)
 	})
 	return (
-		<section id="clientBanner">{ clientEls }</section>
+		<section id="clientBanner">
+			<div className="content">
+				{ clientEls }
+			</div>
+		</section>
 	);
 }
 

@@ -4,19 +4,6 @@
 	align-items: center;
 
 	& .content {
-		padding: 0;
-
-		& .copy {
-			margin: 0 auto;
-			padding: 0 3.5rem;
-
-			@media screen and (max-width: 360px) {
-				& {
-					padding: 0 2.5rem;
-				}
-			}
-
-		}
 	}
 
 	& .imageHolder {
@@ -39,19 +26,24 @@
 		& .content {
 			display: grid;
 			align-items: center;
-			justify-items: center;
 			grid-column-gap: 1.5rem;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: 1fr minmax(250px, 500px);
 
 			& .copy {
 				grid-row: 1;
 				grid-column: 1;
+				justify-self: flex-start;
 			}
 
 			& .image-container {
 				grid-row: 1;
 				grid-column: 2;
 			}
+		}
+	}
+	@media screen and (min-width: 750px) {
+		& .content {
+			grid-template-columns: 1fr minmax(300px, 500px);
 		}
 	}
 }

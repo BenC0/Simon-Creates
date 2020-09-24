@@ -3,6 +3,10 @@
 	background: var(--dark-blue);
 	min-height: 50vh; 
 
+	@media screen and (min-width: 700px) {
+		min-height: unset; 
+	}
+
 	& path {
 		fill: var(--white) !important;
 	}

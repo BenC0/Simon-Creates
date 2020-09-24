@@ -1,10 +1,9 @@
 import React from 'react';
 import './Villian.css';
-import ImageSection from './ImageSection';
 
 function Villian() {
 	const imgUrlBase = `${window.location.href}images/`
-	const simonProfileImg = `${imgUrlBase}Simon-Profile.jpeg`
+	const simonProfileImg = `${imgUrlBase}Simon-Profile-Desktop.jpeg`
 	let SimonProfile = {
 		"imageSrc": simonProfileImg,
 		"alt": "Simon Cohen",

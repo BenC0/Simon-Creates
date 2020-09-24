@@ -1,6 +1,5 @@
 import React from 'react';
 import './Hero.css';
-import ImageSection from './ImageSection';
 
 function Hero() {
 	const imgUrlBase = `${window.location.origin}/images/`

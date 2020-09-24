@@ -4,22 +4,26 @@ import './ImageWithText.css';
 function ImageWithText(props) {
 	console.log(props.content)
 	let copy = []
-	props.content.copy.split('<br />').forEach(paragraph => {
-		copy.push(<p>{paragraph}</p>)
-	})
+	if (props.content.copy.indexOf('<br />') !== -1) {
+		props.content.copy.split('<br />').forEach(paragraph => {
+			copy.push(<p>{paragraph}</p>)
+		})
+	} else {
+		copy.push(<p>{props.content.copy}</p>)
+	}
 
 	return [
 		<section className="imageWithText" highlight={props.content.highlight}>
-			<div class="content">
-				<div class="image-container">
+			<div className="content">
+				<div className="image-container">
 					<img className="imageHolder"
 						src={props.content.imageSrc}
 						alt={props.content.title}
 					/>
 				</div>
-				<div class="copy">
+				<div className="copy">
 					<h2>{props.content.title}</h2>
-					<p>{copy}</p>
+					{copy}
 					<a href={props.content.link} className="cta">See More</a>
 				</div>
 			</div>

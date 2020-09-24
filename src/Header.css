@@ -26,7 +26,7 @@ header {
 		transform: rotate(var(--disrupter-angle));
 
 		@media screen and (min-width: 700px) {
-			bottom: -10%;
+			bottom: -20%;
 		}
 
 		@media screen and (min-width: 1000px) {
@@ -56,5 +56,11 @@ header {
 				display: inline-block;
 			}
 		}
+	}
+}
+.nav-active header {
+	&::before,
+	& #logo_container {
+		opacity: 0;
 	}
 }

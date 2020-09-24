@@ -1,6 +1,7 @@
 #clientBanner {
 	color: var(--white);
 	background: var(--dark-blue);
+	min-height: 50vh; 
 
 	& path {
 		fill: var(--white) !important;

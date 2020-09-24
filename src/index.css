@@ -71,13 +71,7 @@ body {
 	text-decoration: none;
 	background: var(--dark-blue);
 	transition: all .15s ease-in-out;
-	font-family: 'pnova-semibold', 'Helvetica Neue', sans-serif;
-
-	@media screen and (max-width: 360px) {
-		& {
-			font-family: 'pnova-bold', 'Helvetica Neue', sans-serif;
-		}
-	}
+	font-family: 'pnova-bold', 'Helvetica Neue', sans-serif;
 
 	&::after,
 	&::before {
@@ -116,6 +110,7 @@ section	{
 	text-align: left;
 	overflow: hidden;
 	padding: 5rem 0;
+	min-height: 95vh;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
@@ -197,11 +192,11 @@ img {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'pnova-semibold', 'Helvetica Neue', sans-serif;
+	font-family: 'pnova-bold', 'Helvetica Neue', sans-serif;
 
 	@media screen and (max-width: 360px) {
 		& {
-			font-family: 'pnova-bold', 'Helvetica Neue', sans-serif;
+			font-family: 'pnova-semibold', 'Helvetica Neue', sans-serif;
 		}
 	}
 }

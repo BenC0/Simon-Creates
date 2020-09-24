@@ -9,11 +9,11 @@ import ContactForm from './ContactForm';
 import ClientBanner from './ClientBanner';
 
 function Homepage() {
-	const imgUrlBase = `${window.location.href}images/`
-	const placeHolderImage = `${imgUrlBase}Simon-Placeholder.jpg`
+	const imgUrlBase = `${window.location.origin}/images/`
+	const placeHolderImage = `${imgUrlBase}Simon-Profile.jpeg`
 	const iMacPlaceHolerImage = `${imgUrlBase}iMac-Pro-Mockup1_768px.png`
 	const brochurePlaceHolerImage = `${imgUrlBase}A4_Brochure_Mockup_7.png`
-	const simonProfileImg = `${imgUrlBase}Simon_1200px.png`
+	const simonProfileImg = `${imgUrlBase}Simon-Profile.jpeg`
 
 	let ImageWithTextContent1 = {
 		"link": "#",

@@ -1,4 +1,5 @@
 #root > section.full-width-image {
+	min-height: 1vh;
 	padding: 0;
 	
 	& > img { 

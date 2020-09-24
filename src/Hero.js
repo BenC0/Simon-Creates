@@ -3,8 +3,8 @@ import './Hero.css';
 import ImageSection from './ImageSection';
 
 function Hero() {
-	const imgUrlBase = `${window.location.href}images/`
-	const simonProfileImg = `${imgUrlBase}Simon-Profile.jpeg`
+	const imgUrlBase = `${window.location.origin}/images/`
+	const simonProfileImg = `${imgUrlBase}Simon-Profile-Desktop.jpeg`
 	let SimonProfile = {
 		"imageSrc": simonProfileImg,
 		"alt": "Simon Cohen"

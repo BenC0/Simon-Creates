@@ -19,6 +19,7 @@
 		bottom: -300%;
 		position: absolute;
 		background: var(--white);
+		border-top: 1px solid var(--header-border-color);
 		transform: rotate(var(--disrupter-angle));
 	}
 

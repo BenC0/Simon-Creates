@@ -16,7 +16,6 @@ function Hero() {
 				<div className="copy">
 					<h1>Simon Cohen</h1>
 					<p>Highly creative, passionate and empathetic, who aims to always take a human centric approach to his work.</p>
-					<p>With continually growing interests in: advertising, psychology, health, fitness, human behaviour and new technology.</p>
 				</div>
 				<div className="hidden-on-m hero-image-container">
 					<img src={SimonProfile.imageSrc} alt={SimonProfile.alt} />

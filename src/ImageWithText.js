@@ -14,14 +14,14 @@ function ImageWithText(props) {
 
 	return [
 		<section className="imageWithText" highlight={props.content.highlight}>
-			<div className="content">
-				<div className="image-container">
+			<div className="content grid-12">
+				<div className="image-container span-6 offset-8 row-1">
 					<img className="imageHolder"
 						src={props.content.imageSrc}
 						alt={props.content.title}
 					/>
 				</div>
-				<div className="copy">
+				<div className="copy span-5 offset-1 row-1">
 					<h2>{props.content.title}</h2>
 					{copy}
 					<a href={props.content.link} className="cta">See More</a>

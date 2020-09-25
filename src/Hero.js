@@ -11,12 +11,12 @@ function Hero() {
 
 	return [
 		<section id="hero">
-			<div className="content">
-				<div className="copy">
+			<div  className="content grid-12">
+				<div className="copy span-5">
 					<h1>Simon Cohen</h1>
 					<p>Highly creative, passionate and empathetic, who aims to always take a human centric approach to his work.</p>
 				</div>
-				<div className="hidden-on-m hero-image-container">
+				<div className="hidden-on-m hero-image-container span-5 offset-8">
 					<img src={SimonProfile.imageSrc} alt={SimonProfile.alt} />
 				</div>
 			</div>

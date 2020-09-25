@@ -3,9 +3,6 @@
 	flex-direction: column;
 	align-items: center;
 
-	& .content {
-	}
-
 	& .imageHolder {
 		padding: 0;
 		transform: scale(1.4);
@@ -24,26 +21,9 @@
 
 	@media screen and (min-width: 700px) {
 		& .content {
-			display: grid;
-			align-items: center;
-			grid-column-gap: 1.5rem;
-			grid-template-columns: 1fr minmax(250px, 500px);
-
 			& .copy {
-				grid-row: 1;
-				grid-column: 1;
 				justify-self: flex-start;
 			}
-
-			& .image-container {
-				grid-row: 1;
-				grid-column: 2;
-			}
-		}
-	}
-	@media screen and (min-width: 750px) {
-		& .content {
-			grid-template-columns: 1fr minmax(300px, 500px);
 		}
 	}
 }

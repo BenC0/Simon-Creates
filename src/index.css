@@ -63,46 +63,13 @@ body {
 
 .cta {
 	font-size: inherit;
-	position: relative;
 	color: var(--white);
 	border-radius: 1rem;
 	padding: .5em 1.5em;
 	display: inline-block;
 	text-decoration: none;
 	background: var(--dark-blue);
-	transition: all .15s ease-in-out;
 	font-family: 'pnova-bold', 'Helvetica Neue', sans-serif;
-
-	&::after,
-	&::before {
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		content: "";
-		display: block;
-		position: absolute;
-		border-radius: 1rem;
-		transition: all .15s ease-in-out;
-	}
-	
-	&::before {
-		z-index: -2;
-		background: var(--dark-blue);
-	}
-	
-	&::after {
-		z-index: -1;
-		border: 0.1em solid var(--white);
-		background: var(--highlight-2);
-	}
-
-	&:hover {
-		background: transparent;
-		&::before {
-			transform: skewY(var(--disrupter-angle)) scale(1.05);
-		}
-	}
 }
 
 section	{
@@ -143,7 +110,7 @@ section	{
 			}
 		}
 
-		@media screen and (min-width: 1200px) {
+		@media screen and (min-width: 1250px) {
 			& {
 				padding: 0;
 			}
@@ -158,14 +125,12 @@ section	{
 	}
 
 	& .copy {
-		max-width: 5ch;
 		font-size: 4rem;
 
 		& *:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
 			font-size: 1rem;
 		}
 		@media screen and (min-width: 700px) {
-			max-width: 8ch;
 			justify-self: flex-start;
 		}
 	}

@@ -3,7 +3,7 @@ import './ClientBanner.css';
 
 function ClientEl(props) {
 	return (
-		<span>{props.client.logo}</span>
+		<span className="span-2">{props.client.logo}</span>
 	)
 }
 
@@ -42,7 +42,7 @@ function ClientBanner() {
 	})
 	return (
 		<section id="clientBanner">
-			<div className="content">
+			<div className="content grid-12">
 				{ clientEls }
 			</div>
 		</section>

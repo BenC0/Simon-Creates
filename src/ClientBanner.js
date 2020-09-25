@@ -3,7 +3,7 @@ import './ClientBanner.css';
 
 function ClientEl(props) {
 	return (
-		<span className="span-2">{props.client.logo}</span>
+		<span className="d-span-2 m-span-6">{props.client.logo}</span>
 	)
 }
 

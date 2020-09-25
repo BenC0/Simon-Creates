@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Header from './Header';
 import Homepage from './Homepage';
+import WhatIveDone from './WhatIveDone';
 import Menu from './Menu';
 
 import {
@@ -22,10 +23,10 @@ function Home() {
 			</div>
 }
 
-function WhatIveDone() {
+function WiD() {
 	pageSwap()
 	return <div className="page">
-				<Homepage />
+				<WhatIveDone />
 			</div>
 }
 
@@ -59,7 +60,7 @@ function App() {
 					</li>
 				</ul>
 			</nav>
-			<Header />,
+			<Header />
 			{/* A <Switch> looks through its children <Route>s and
 			renders the first one that matches the current URL. */}
 			<Switch>
@@ -70,7 +71,7 @@ function App() {
 					<WhoIAm />
 				</Route>
 				<Route path="/what-ive-done">
-					<WhatIveDone />
+					<WiD />
 				</Route>
 				<Route path="/">
 					<Home />

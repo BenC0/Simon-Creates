@@ -117,13 +117,6 @@ section	{
 		}
 	}
 
-	& h1, & h2, & h3, & h4, & h5, & h6 {
-		letter-spacing: -0.1ch;
-		line-height: 0.875;
-		margin: .5em 0rem;
-		font-size: 2rem;
-	}
-
 	& .copy {
 		font-size: 4rem;
 
@@ -133,6 +126,20 @@ section	{
 		@media screen and (min-width: 700px) {
 			justify-self: flex-start;
 		}
+	}
+
+	& h1, & h2, & h3, & h4, & h5, & h6 {
+		letter-spacing: -0.1ch;
+		line-height: 0.875;
+		margin: .5em 0rem;
+		font-size: 2rem;
+	}
+
+	& .copy .subheading {
+		margin-top: 1rem;
+		display: block;
+		font-size: 2rem;
+		letter-spacing: 0ch;
 	}
 }
 
@@ -156,9 +163,29 @@ img {
 	}
 }
 
+.noScroll { overflow: hidden; }
+
 [highlight="gradient"] {
 	background: var(--body-gradient);
 	color: var(--white);
+}
+
+[highlight="b-b-gradient"] {
+	background: linear-gradient(
+		var(--disrupter-angle),
+		var(--darker-blue) 0%,
+		var(--dark-blue) 100%
+	);
+	color: var(--white);
+}
+
+[highlight="g-g-gradient"] {
+	background: linear-gradient(
+		to bottom,
+		#ccc,
+		#eee
+	);
+	color: var(--dark-blue);
 }
 
 [highlight="white"] {

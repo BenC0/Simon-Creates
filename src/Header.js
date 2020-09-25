@@ -9,7 +9,7 @@ function Header() {
   return (
     <header>
     	<div className="content grid-12">
-	    	<div id="logo_container" className="span-2">
+	    	<div id="logo_container" className="span-6">
           <Link to="/">
   		    	<span>SimonCreates</span>
   		    	<span>.online</span>

@@ -1,23 +1,20 @@
 import React from 'react';
 import './Hero.css';
 
-function Hero() {
-	const imgUrlBase = `${window.location.origin}/images/`
-	const simonProfileImg = `${imgUrlBase}Simon-Profile-Desktop.jpeg`
-	let SimonProfile = {
-		"imageSrc": simonProfileImg,
-		"alt": "Simon Cohen"
+function Hero(props) {
+	let title = <h1>{props.content.title}</h1>
+	if (props.content.subtitle !== false) {
+		title = <h1>{props.content.title}<span className="subheading">{props.content.subtitle}</span></h1>
 	}
-
 	return [
 		<section id="hero">
 			<div  className="content grid-12">
-				<div className="copy span-5">
-					<h1>Simon Cohen</h1>
-					<p>Highly creative, passionate and empathetic, who aims to always take a human centric approach to his work.</p>
+				<div className="copy d-span-5 m-span-4 m-offset-4">
+					{title}
+					<p>{props.content.copy}</p>
 				</div>
-				<div className="hidden-on-m hero-image-container span-5 offset-8">
-					<img src={SimonProfile.imageSrc} alt={SimonProfile.alt} />
+				<div className="hidden-on-m hero-image-container d-span-6 d-offset-7">
+					<img src={props.content.image.imageSrc} alt={props.content.image.alt} />
 				</div>
 			</div>
 		</section>

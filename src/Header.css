@@ -38,8 +38,9 @@ header {
 		z-index: 2;
 		display: flex;
 		position: relative;
-		align-items: flex-end;
+		align-self: flex-start;
 		flex-direction: column;
+		justify-self: flex-start;
 
 		font-size: 1.2rem;
 		line-height: 1;

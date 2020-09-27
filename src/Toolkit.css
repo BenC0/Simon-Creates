@@ -1,0 +1,8 @@
+#Toolkit {
+	& .content {
+		color: var(--darker-blue);
+		& path {
+			fill: var(--darker-blue);
+		}
+	}
+}

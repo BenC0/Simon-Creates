@@ -5,9 +5,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 
 class Slide extends React.Component {
-  constructor(props) {
-    super(props)
-  }
   render() {
     let copy = []
     if (this.props.content.copy.indexOf('<br />') !== -1) {
@@ -91,7 +88,7 @@ class CaseStudy extends React.Component {
     let project = this.props.project
     let id = `CaseStudy-${project.client.trim().replace(/ /g, '-')}`
     let styleRules = {}
-    let imageContainer = <div className="image-container d-span-9 d-offset-4 m-span-12 m-row-1">
+    let imageContainer = <div className="image-container t-span-6 t-offset-7 d-span-9 d-offset-4 m-span-12 m-row-1">
           <img src={project.image.src} alt={project.image.alt} />
         </div>
     if (project["highlight"] === "image") {
@@ -105,7 +102,7 @@ class CaseStudy extends React.Component {
       <div>
         <section className="caseStudy" id={id} highlight={project.highlight} style={styleRules}>
           <div className="content grid-12">
-            <div className="copy d-span-3 m-span-12 m-row-2">
+            <div className="copy t-span-6 d-span-3 m-span-12 m-row-2">
               <h2>
                 {project.client}
                 <span className="subheading">{project.project}</span>

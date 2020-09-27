@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react';
+import Menu from './Menu';
+import WhoIAm from './WhoIAm';
 import Header from './Header';
 import Homepage from './Homepage';
 import WhatIveDone from './WhatIveDone';
-import Menu from './Menu';
+import ContactForm from './ContactForm';
 
 import {
   BrowserRouter as Router,
@@ -30,17 +32,17 @@ function WiD() {
 			</div>
 }
 
-function WhoIAm() {
+function About() {
 	pageSwap()
 	return <div className="page">
-				<Homepage />
+				<WhoIAm />
 			</div>
 }
 
 function ContactMe() {
 	pageSwap()
 	return <div className="page">
-				<Homepage />
+				<ContactForm />
 			</div>
 }
 
@@ -68,7 +70,7 @@ function App() {
 					<ContactMe />
 				</Route>
 				<Route path="/who-i-am">
-					<WhoIAm />
+					<About />
 				</Route>
 				<Route path="/what-ive-done">
 					<WiD />

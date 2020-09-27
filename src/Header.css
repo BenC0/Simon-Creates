@@ -42,21 +42,13 @@ header {
 		flex-direction: column;
 		justify-self: flex-start;
 
-		font-size: 1.2rem;
 		line-height: 1;
-		font-family: 'pnova-bold';
 
 		cursor: pointer;
 		text-align: right;
-		padding: .5rem .5rem;
+		padding: .5rem 0;
 
-		& span {
-
-			&:last-child {
-				margin-top: -.35em;
-				display: inline-block;
-			}
-		}
+		width: 200px;
 	}
 }
 .nav-active header {

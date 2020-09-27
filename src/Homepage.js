@@ -5,6 +5,7 @@ import Villian from './Villian';
 import ImageWithText from './ImageWithText';
 import ImageSection from './ImageSection';
 import ClientBanner from './ClientBanner';
+import ContactForm from './ContactForm';
 
 function Homepage() {
 	const imgUrlBase = `${window.location.origin}/images/`
@@ -43,7 +44,8 @@ function Homepage() {
 		<ImageWithText content={ImageWithTextContent1} />,
 		<ImageWithText content={ImageWithTextContent2} />,
 		<ImageSection image={SimonProfile} />,
-		<Villian />
+		<Villian />,
+		<ContactForm />
 	]
 }
 
